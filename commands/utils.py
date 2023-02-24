@@ -12,7 +12,7 @@ class Utils(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @bot.command()
+    @commands.command()
     async def ping(self, ctx:Interaction):
         await ctx.send(f"Pong! Latency: {round(self.bot.latency * 1000)}ms")
 

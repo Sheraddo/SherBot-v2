@@ -13,7 +13,7 @@ class Startup(commands.Cog):
         self.bot = bot
 
     @commands.Cog.listener()
-    async def on_ready():
+    async def on_ready(self):
         print("Bot is online!")
 
 def setup(bot):
